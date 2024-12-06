@@ -276,7 +276,7 @@ uint8_t BM1366_init(uint64_t frequency, uint16_t asic_count)
 
     if (chip_counter != asic_count) {
         ESP_LOGE(TAG, "Chip count mismatch. Expected: %d, Actual: %d", asic_count, chip_counter);
-        return 0;
+//        return 0;
     }
 
     uint8_t init_cmds[][6] = {
